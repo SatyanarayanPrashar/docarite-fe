@@ -1,3 +1,4 @@
+
 module.exports = {
     theme: {
       extend: {
@@ -6,6 +7,8 @@ module.exports = {
         },
       },
     },
-    plugins: [],
+    plugins: [
+      require('tailwind-scrollbar'),
+    ],
   }
   

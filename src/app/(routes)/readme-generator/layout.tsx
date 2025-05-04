@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../../globals.css";
 import Main_wrapper from "@/components/main_wrapper";
 
 export const metadata: Metadata = {
@@ -16,10 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="">
-          {children}
-      </body>
-    </html>
+    <Main_wrapper p_width="narrow">
+      {children}
+    </Main_wrapper>
   );
 }
